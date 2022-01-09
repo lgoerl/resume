@@ -1,0 +1,55 @@
+\documentclass[a4paper,10pt,notitlepage]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage[american]{babel}
+\usepackage[dvips]{graphicx}
+\usepackage{multicol}
+%\renewcommand{\baselinestretch}{3}
+\oddsidemargin 0.0in
+\topmargin 0.0in
+\headsep 0.1in
+\textwidth 6.5in
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\large\bfseries Lee Goerl, PhD}
+%\lhead{\large\bfseries Curriculum Vitae}
+\begin{document}
+\begin{multicols}{2}{
+\noindent %Lee Goerl\\
+%Cardwell Hall \#127\\
+%Manhattan, KS 66502
+
+\noindent lgoerl@gmail.com\\
+\noindent 620-786-4561\\
+\\
+\hspace*{-10pt}\hfill github.com/lgoerl\\
+\hspace*{-10pt}\hfill linkedin.com/in/lgoerl\\
+}
+\end{multicols}
+\vspace{-20pt}\section*{Post-Secondary Education}
+    \begin{description}
+    \vspace{-5pt} \item[PhD:] Kansas State University, Mathematics (December 9, 2016)
+    \item[Professional Training:] The Data Incubator, Data Science (November 11, 2016)
+    \end{description}
+
+\section*{Data Science, Analytics, and Engineering Experience}
+
+    \begin{itemize}
+        \vspace{-5pt}\item \textbf{Blue Bottle - Culinary Forecasting V1 (IC):} Built a framework in Python for training predictive ensemble SARIMAX models to generate demand forecasts for each of our food items, and a delivery/management system. Much of my work on this project was focused on improving reliability and performance, completely automating model training of forecast models, reducing lead-time for forecasting for new locations, expanding the number of forecastable items, and expanding test coverage of the codebase. Additionally, I helped design and analyze experiments to determine length of data series required, what loss functions were more performant for training our ensemble, and an in-store experiment conducted to determine whether we could increase sales by keeping a better stocked pastry case. \emph{Python, Rails, AWS ECS, Redshift, S3, SNS, and SQS}
+        \vspace{-5pt}\item \textbf{Blue bottle - Retail Bean Forecasting V1 (IC):} We extended our culinary forecasting framework to retail bags of coffee beans sold in-store. This included building inventory tracking and some custom performance monitoring tools.
+        \vspace{-5pt}\item \textbf{Blue bottle - Retail Bean Forecasting V2 (Lead):} his project saw us completely rebuild the culinary forecasting infrastructure. As the sole Blue Bottle engineer on the project, my primary responsibilities involve managing a team of consulting ML engineers, providing business/process insight, building the necessary data pipelines, performance and sla monitoring, an ensemble step, and dev ops. \emph{Airflow, AWS Sagemaker}
+        \vspace{-5pt}\item \textbf{Blue bottle - etc:} Prototyped a item-management system to deploy menu items to our various cafes square registers. Lead an evaluation/search for a new point of sale system. SQL-based queries for ad-hoc analyses with stakeholders.
+        \vspace{-5pt}\item \textbf{QuasiCoherent Labs:} Co-founded in 2015 to offer consulting on data products to non-profit organizations. I have consulted with clients to design and spec projects to their needs. Discussed aspects of processes to be modeled, data, and collection with their domain experts. Most recently, consulted on and provided research and graphics for the book \emph{When it Finally Happens (2019)} by Mike Pearl.
+        \vspace{-5pt}\item \textbf{Peronal:} 
+            \begin{itemize}
+                \item \textbf{Strava based app:} Scraped Strava's website for user created cycling and running routes to implement a usable search feature. Setup a remote database for the scraped data. Deployed to Heroku an API driven front-end to interface user-based queries to find routes near a specified location.
+                \item \textbf{Go playing bot:} Based on AlphaGo, written with Keras, utilizes historical professional game logs, n-step-ahead move prediction, self-play to generate data and determine model improvement, and adversarial reinforcement learning to train a best next-move generator.
+                \item \textbf{misc:} Model to count/sum the number of objects in a generated image, and a GAN to generate an image with a given count/sum of objects. Modeling of algebraic functions. From-scratch implementation of an MLP.
+            \end{itemize}
+    \end{itemize}
+
+\end{document}
